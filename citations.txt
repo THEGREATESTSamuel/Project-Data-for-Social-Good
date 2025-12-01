@@ -1,0 +1,30 @@
+    public String toString() {
+      String result = "Casualty Summary:\n";
+      // some code here to add to result 
+      result += "Total number of countries: " + stats.length + "\n";
+      result += "Country with the most casualties: " + getCountryWithMostCasualties() + "\n";
+      result += "Average number of casualties per country in the world: " + getAverageCasualties() + "\n";
+      result += "Number of countries with over one million casualties: " + getAboveMillion() + "\n";
+      return result;
+    } 
+
+    MR.AIELLO HELPED US WITH THIS
+
+
+    public UserStory(String countryFile, String casualtyFile) {
+        this.stats = createCountries(countryFile, casualtyFile);
+    }
+
+    public CountryStats[] createCountries(String countryFile, String casualtyFile) {
+        String[] countries = FileReader.toStringArray(countryFile);
+        int[] casualties = FileReader.toIntArray(casualtyFile);
+
+        CountryStats[] statsArray = new CountryStats[countries.length];
+
+        for (int i = 0; i < countries.length; i++) {
+            statsArray[i] = new CountryStats(countries[i], casualties[i]);
+        }
+
+        return statsArray;
+    }
+ CHATGPT DOUBLE CHECKED THIS CODE. ALSO RECEIVED HELP FROM MR.AIELLO
