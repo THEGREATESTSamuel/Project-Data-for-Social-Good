@@ -20,7 +20,7 @@ Include your User Story you analyzed for your project here. Your User Story shou
 
 > As a world history enjoyer, <br> 
 > I want to analyze casualties by country in WW2, <br> 
-> so that I can can understand the scale of human cost during the war.
+> so that I can understand the scale of human cost during the war.
 
 ## Dataset 
 
